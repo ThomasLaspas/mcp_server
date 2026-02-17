@@ -1,0 +1,26 @@
+[project]
+name = "pro-mcp-server"
+version = "0.1.0"
+description = "Professional MCP server with advanced search and utility tools"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "crawl4ai>=0.8.0",
+    "fastmcp>=2.14.5",
+    "huggingface-hub>=0.36.2",
+    "langchain-community>=0.4.1",
+    "langchain-core>=1.2.12",
+    "langchain-huggingface>=1.2.0",
+    "playwright>=1.58.0",
+    "pydantic>=2.12.5",
+    "pymongo>=4.16.0",
+    "python-dotenv>=1.2.1",
+    "requests>=2.32.5",
+    "sentence-transformers>=5.2.2",
+    "tavily-python>=0.7.21",
+    "wikipedia>=1.4.0",
+]
+
+[project.scripts]
+mcp-server = "server:main"
